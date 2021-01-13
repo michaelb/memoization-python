@@ -2,7 +2,7 @@ def fib(n):
     """ original function"""
 
     if n == 0 or n == 1:
-        return 1
+        return n
 
     # else
     result = fib(n-1) + fib(n-2)
@@ -22,7 +22,7 @@ def fib_memo(n, d=dict()):
 
     # else, compute the value
     if n == 0 or n == 1:
-        return 1
+        return n
     result = fib_memo(n-1) + fib_memo(n-2)
 
     d[n] = result
