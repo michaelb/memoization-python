@@ -1,0 +1,3 @@
+Using a lesser-known python quirk, memoizing functions do not require using decorations, wrappers, etc...
+
+Not saying this is the best solution, but possibly the simplest.
