@@ -10,9 +10,10 @@ def fib(n):
 
 
 """why does it works? the dict d is actually common to all f calls.
-It's a lesser known python quirk that often causes issue, but here it's 
-very useful & powerful, as any subsequent call to f will also 
+It's a lesser known python quirk that often causes issue, but here it's
+very useful & powerful, as any subsequent call to f will also
 benefit from the memoization"""
+
 
 def fib_memo(n, d=dict()):
     # check if value memoized
@@ -28,5 +29,7 @@ def fib_memo(n, d=dict()):
     return result
 
 
+print("memoized call:")
 print("fib_memo(35) = ", fib_memo(35))
-print("Notice how it's much longer: fib(30) = ", fib(35))
+print("non memoized(notice how it's much longer):
+print("fib(35) = ", fib(35))
