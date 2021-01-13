@@ -31,5 +31,5 @@ def fib_memo(n, d=dict()):
 
 print("memoized call:")
 print("fib_memo(35) = ", fib_memo(35))
-print("non memoized(notice how it's much longer):
+print("non memoized(notice how it's much longer):")
 print("fib(35) = ", fib(35))
